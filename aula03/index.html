@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+    <style>
+        .alerta {
+            color: red;
+            font-size: 11px;
+            height: 10px;
+            margin: 2px 0 10px 0;
+        }
+
+        .alerta-geral {
+            margin: 5px 0;
+            border-radius: 5px;
+            padding: 10px;
+            color: red;
+            background-color: rgb(247, 214, 214);
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula 03</h1>
+    <hr>
+    <p class="alerta-geral hide">Existem erros !!!</p>
+    <input type="text" id="nome" placeholder="Nome">
+    <p class="alerta alerta-nome"></p>
+
+    <input type="text" id="cpf" placeholder="CPF">
+    <p class="alerta alerta-cpf"></p>
+
+    <input type="number" id="idade" placeholder="Idade">
+    <p class="alerta alerta-idade"></p>
+
+    <select id="sexo">
+        <option value="">Sexo</option>
+        <option value="F">F</option>
+        <option value="M">M</option>
+    </select>
+    <p class="alerta alerta-sexo"></p>
+
+    <input type="button" id="btnGravar" value="Gravar">
+    <script src="app.js"></script>
+</body>
+
+</html>

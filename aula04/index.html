@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+    <style>
+        .alerta_danger {
+            color: red;
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+            height: 20px;
+        }
+
+        .alerta_success {
+            color: green;
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+            height: 20px;
+        }
+
+        .alerta_geral {
+            margin: 5px 0;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .alerta_geral_danger {
+            color: red;
+            background-color: rgb(247, 214, 214);
+        }
+
+        .alerta_geral_success {
+            color: green;
+            background-color: rgb(193, 243, 193);
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aula 03</h1>
+    <hr>
+    <p class="alerta_geral hide"></p>
+    <input type="text" id="nome" placeholder="Nome">
+    <p class="alerta_nome"></p>
+    <select id="tipo_pessoa">
+        <option value="">Tipo Pessoa</option>
+        <option value="FISICA">FISICA</option>
+        <option value="JURIDICA">JURIDICA</option>
+    </select>
+    <p class="alerta_tipo_pessoa"></p>
+    <input type="text" id="cpf_cnpj" placeholder="CPF/CNPJ">
+    <p class="alerta_cpf_cnpj"></p>
+    <input type="text" id="rg_ie" placeholder="RG/IE">
+    <p class="alerta_rg_ie"></p>
+    <input type="text" id="cep" placeholder="CEP">
+    <p class="alerta_cep"></p>
+    <button type="button" id="btnGravar">Gravar</button>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
